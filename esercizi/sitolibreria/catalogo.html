@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Catalogo Libri - Libreria Fantastica</title>
+    <title>Catalogo Libri - Italian Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
-            background-color: #D2F0FF;
-            color: #2A2A2A;
-            font-family: Arial, sans-serif;
+            background-image: url(https://img.freepik.com/premium-photo/abstract-blurred-empty-university-library-interior-space-use-background-education-concepts_697880-96.jpg);
+            background-size: cover;
+            background-color: #4186a8;
+            color: #ffffff;
+            font-family:'Times New Roman', Times, serif;
+            padding-top: 20px;
+        }
+        header{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1{
+            font-size: 56px;
+            color: rgb(238, 227, 132);
+        }
+        header h2{
+            font-size: 24px;
+        }
+
+        .book-info {
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Catalogo Libri</h1>
+        <h1>CATALOGO LIBRI</h1>
+        <h2 style="text-decoration: underline;">La nostra accurata selezione</h2>
     </header>
-    <table>
-        <td style="width:33%;">
-            <img src="https://img.illibraio.it/images/9788830441774_92_1000_0_75.jpg" style="height: 200px;" alt="Copertina Libro 1">
-            <h2>La storia infinita</h2>
-            <p>Autore del Libro: Michael Ende 1</p>
-            <p>Genere: Fantasy, Narrativa per ragazzi</p>
-            <img src="https://m.media-amazon.com/images/I/61L6Qv2FVrL._AC_UF1000,1000_QL80_.jpg" style="height: 200px;" alt="Copertina Libro 1">
-            <h2>Il libro d'oro</h2>
-            <p>Autore del Libro: Benedetta Rossi</p>
-            <p>Genere: Cucina</p>
-        </td>
-        <td style="width:33%;">
-            <img src="https://www.td-toys.it/44332-thickbox_default/citta-dei-vivi-lalibri.jpg" style="height: 200px;" alt="Copertina Libro 1">
-            <h2>La città dei vivi</h2>
-            <p>Autore del Libro: Nicola Lagioia</p>
-            <p>Genere: Cronaca Nera</p>
-            <img src="https://i.ytimg.com/vi/n2zeHR_oKcc/mqdefault.jpg" style="height: 200px;width: 150px;" alt="Copertina Libro 1">
-            <h2>Barbara D'Urso presenta: il ballo delle mani</h2>
-            <p>Autore del Libro: Barbara D'Urso</p>
-            <p>Genere: Educativo, Sanitario</p>
-        </td>
-        <td style="width:33%;">
-            <img src="https://m.media-amazon.com/images/I/710MUrNAofL._AC_UF1000,1000_QL80_.jpg" style="height: 200px;" alt="Copertina Libro 1">
-            <h2>Io sono Giorgia</h2>
-            <p>Autore del Libro: Giorgia Meloni</p>
-            <p>Genere: Autobiografico, Politica</p>
-        </td>
-        </table>
-        <a href="index.html">Pagina Principale</a>
-        <a href="chi_siamo.html">Chi Siamo</a>
-        
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="book-info">
+                    <img src="https://m.media-amazon.com/images/I/41q3XtmKeIL.jpg" style="height: 200px;" alt="Copertina Libro 1">
+                    <h2>Il principe</h2>
+                    <p>Autore del Libro: Niccolò Machiavelli</p>
+                    <p>Genere: Politico</p>
+                </div>
+                <div class="book-info">
+                    <img src="https://www.td-toys.it/44332-thickbox_default/citta-dei-vivi-lalibri.jpg" style="height: 200px;" alt="Copertina Libro 2">
+                    <h2>Ia città dei vivi</h2>
+                    <p>Autore del Libro: Nicola Lagioia</p>
+                    <p>Genere: Cronaca Nera</p>
+                </div>
+                <div class="book-info">
+                    <img src="https://m.media-amazon.com/images/I/61L6Qv2FVrL._AC_UF1000,1000_QL80_.jpg" style="height: 200px;" alt="Copertina Libro 2">
+                    <h2>Il libro d'oro</h2>
+                    <p>Autore del Libro: Benedetta Rossi</p>
+                    <p>Genere: Cucina</p>
+                </div>
+                <div class="book-info">
+                    <img src="https://m.media-amazon.com/images/I/710MUrNAofL._AC_UF1000,1000_QL80_.jpg" style="height: 200px;" alt="Copertina Libro 3">
+                    <h2>Io sono Giorgia</h2>
+                    <p>Autore del Libro: Giorgia Meloni</p>
+                    <p>Genere: Autobiografico</p>
+                </div>
+                <div class="book-info">
+                    <img src="https://i.ytimg.com/vi/n2zeHR_oKcc/mqdefault.jpg" style="height: 200px; width: 135px;" alt="Copertina Libro 3">
+                    <h2>Barbara d'Urso presenta: il ballo delle mani</h2>
+                    <p>Autore del Libro: Barbara d'Urso</p>
+                    <p>Genere: Educativo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <a href="index.html" class="btn btn-primary mx-2">Pagina Principale</a>
+        <a href="chi_siamo.html" class="btn btn-secondary mx-2">Chi Siamo</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
