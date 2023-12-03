@@ -13,13 +13,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         height: 100vh;
 
     }
 </style>
 <body>
     <h1 class="text-left display-4 font-italic font-weight-bold" style="color:white; -webkit-text-stroke: 1px black;">SECOND HAND SHOP</h1>
-    <form action="./questionario/secondapagina.php" style="color:aquamarine; font-weight: bold;">
+    <form action="./questionario/secondapagina.php" style="color:chartreuse; font-weight: bold;">
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome" required><br>
         <label for="cognome">Cognome:</label><br>
@@ -28,10 +29,10 @@
         <input type="number" id="eta" name="eta" required><br>
         <label for="password">Password:</label><br>
         <input type="password" name="password" required><br>
-        <label for="sport">Sport preferito:</label><br>
-        <input type="text" id="sport" name="sport" required><br>
+        <label for="tessuto">Tessuto preferito:</label><br>
+        <input type="text" id="tessuto" name="tessuto" required><br>
         <label for="csfondo">Colore sfondo:</label>
-        <input type="color" id="csfondo" name="background_color"><br>
+        <input type="color" id="csfondo" name="csfondo"><br>
         <input type="submit" value="Login">
     </form>
 </body>

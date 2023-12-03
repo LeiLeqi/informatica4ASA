@@ -18,7 +18,7 @@
             background-size: cover;
         }
         .content-box {
-            background-color:aquamarine; 
+            background-color:<?=$_GET['csfondo']?>;
             padding: 20px;
             border-radius: 10px;
         }
@@ -29,12 +29,12 @@
     <?php
         $pas="info2023";
         if ($_GET['password'] == $pas) {
-            echo "<h1>Benvenuto!</h1>";
+            echo "<h1>Benvenuto  " . $_GET['nome'] . "!</h1>";
             echo "<ul>";
             echo "<li><b>Nome:</b> " . $_GET['nome'] . "</li>";
             echo "<li><b>Cognome:</b> " . $_GET['cognome'] . "</li>";
             echo "<li><b>Età:</b> " . $_GET['eta'] . "</li>";
-            echo "<li><b>Sport Preferito:</b> " . $_GET['sport'] . "</li>";
+            echo "<li><b>Tessuto Preferito:</b> " . $_GET['tessuto'] . "</li>";
             echo "</ul>";
         } 
         else {
