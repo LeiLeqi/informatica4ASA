@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome Page</title>
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $password = $_POST['password'];
+        if ($password !== 'info2023') {
+            header('Location: index.php'); 
+            exit();
+        }
+    } else {
+        header('Location: index.php'); 
+        exit();
+    }
+    ?>
+    <style>
+        body {
+            background-color: <?php echo isset($_POST['bgcolor']) ? htmlspecialchars($_POST['bgcolor']) : '#ffffff'; ?>;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>Hello, user! You are now authenticated.</p>
+    <p>Your information:</p>
+    <ul>
+        <li><strong>Name:</strong> <?php echo htmlspecialchars($_POST['name']); ?></li>
+        <li><strong>Surname:</strong> <?php echo htmlspecialchars($_POST['surname']); ?></li>
+        <li><strong>Age:</strong> <?php echo htmlspecialchars($_POST['age']); ?></li>
+        <li><strong>Favorite Sport:</strong> <?php echo htmlspecialchars($_POST['sport']); ?></li>
+    </ul>
+</body>
+</html>
